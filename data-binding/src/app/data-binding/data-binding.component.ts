@@ -8,17 +8,37 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
 
   url: string = 'http://loiane.com';
-  renan : string = 'Viado & corno';
+  renan: string = 'Viado & corno';
   cursoAngular: boolean = true;
   urlImagem = 'http://lorempixel.com.br/400/200/nature/';
+  valorAtual: string = '';
+  valorSalvo: string = '';
+  isMouseOver: boolean = false;
 
-  getValor(){
+  getValor() {
     return 1;
   }
 
-  getCurtirCurso(){
+  getCurtirCurso() {
     return true;
   }
+
+  botaoClicado() {
+    alert('Botão clicado!');
+  }
+
+
+  onKeyUp(evento: KeyboardEvent) {
+    this.valorAtual = ((<HTMLInputElement>evento.target).value);
+  }
+  salvarValor(valor) {
+    this.valorSalvo = valor;
+  }
+
+  onMouseOverOut(){
+    this.isMouseOver = !this.isMouseOver;
+  }
+
   constructor() { }
 
   ngOnInit() {
