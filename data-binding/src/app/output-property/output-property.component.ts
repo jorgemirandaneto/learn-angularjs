@@ -8,6 +8,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 })
 export class OutputPropertyComponent implements OnInit {
 
+
   @Input() valor: number = 0;
 
   @Output() mudouValor = new EventEmitter();
@@ -22,7 +23,8 @@ export class OutputPropertyComponent implements OnInit {
     this.mudouValor.emit({novoValor: this.valor});
   }
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() { 
   }
