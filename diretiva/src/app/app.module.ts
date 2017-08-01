@@ -1,17 +1,12 @@
-import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-
-import { MaterializeModule } from "angular2-materialize";
-
-
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MaterializeModule,
     DiretivaNgifComponent
   ],
   imports: [
