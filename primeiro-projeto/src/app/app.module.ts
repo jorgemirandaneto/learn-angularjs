@@ -7,14 +7,13 @@ import { CursosModule } from './cursos/cursos.module';
 import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from "app/meu-primeiro/meu-primeiro.component";
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
-import { CursoDetalheComponent } from './curso/curso-detalhe/curso-detalhe.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
-    MeuPrimeiro2Component,
-    CursoDetalheComponent,
+    MeuPrimeiro2Component
   ],
   imports: [
     BrowserModule,
