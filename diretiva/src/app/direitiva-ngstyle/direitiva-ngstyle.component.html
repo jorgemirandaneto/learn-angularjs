@@ -1,0 +1,18 @@
+<h1>Styles com property binding</h1>
+<br>
+<button 
+[style.backgroundColor]="ativo ? 'blue' : 'black'"
+[style.color]="ativo ? 'black':'white'"
+[style.fontWeight]="ativo ? 'bold':'normal'"
+[style.fontSize]="tamanhoDafonte + 'px'"
+(click)="onclick()"
+>Mostrar atributo ativo</button>
+<br>
+<button 
+[ngStyle]="{'backgroundColor': (ativo ? 'blue' : 'black'),
+ 'color': (ativo ? 'black':'white'),
+ 'fontWeight': (ativo ? 'bold':'normal'),
+ 'fontSize':(tamanhoDafonte + 'px')
+ }"
+(click)="onclick()"
+>Mostrar atributo ativo</button>
