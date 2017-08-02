@@ -1,0 +1,22 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="viewMode == 'mapa'" (click)="viewMode = 'mapa'">Mapa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="viewMode == 'lista'" (click)="viewMode = 'lista'">Lista</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'mapa'">
+    <p>Mapa
+  </div>
+     <div *ngSwitchCase="'lista'">
+    <p>Lista
+  </div>
+</div>
