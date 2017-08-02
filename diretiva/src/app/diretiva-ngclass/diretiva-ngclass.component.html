@@ -1,0 +1,17 @@
+<h1>
+    <i class="glyphicon" 
+    [class.glyphicon-star]="mudarEstrela"
+    [class.glyphicon-star-empty]="!mudarEstrela" 
+    (click)="onClick()"
+    ></i>
+</h1>
+
+<h1>
+    <i class="glyphicon" 
+    [ngClass]="{
+        'glyphicon-star': mudarEstrela,
+        'glyphicon-star-empty': !mudarEstrela
+    }" 
+    (click)="onClick()"
+    ></i>
+</h1>
