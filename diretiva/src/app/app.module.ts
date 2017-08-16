@@ -1,3 +1,4 @@
+import { HighlightDirective } from './shared/highlight.directive';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,7 +28,8 @@ import { DiretivaPersonalizadaComponent } from './diretiva-personalizada/diretiv
     ExemploNgContentComponent,
     DiretivaPersonalizadaComponent,
     FundoAmareloDirective,
-    HighlightMouseDirective
+    HighlightMouseDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule
