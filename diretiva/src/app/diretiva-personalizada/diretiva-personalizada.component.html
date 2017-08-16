@@ -7,3 +7,15 @@
 <button highlightMouse> Teste highlight Mouse</button>
 
 <button [highlight]="'white'" [defaultColor]="'Red'">Teste</button>
+
+
+<div *ngIf="mostrarCursos" >
+  Mostra cursos.
+</div>
+
+<div *ngElse="mostrarCursos" >
+  Não mostra cursos.
+</div>
+
+
+<button class="btn btn-primary" (click)="Mostrar()">Mostra curso</button>

@@ -21,5 +21,5 @@ export class HighlightDirective {
 
   ngOnInit() {
     this.background = this.defaultColor;    
-  }
+  }  
 }

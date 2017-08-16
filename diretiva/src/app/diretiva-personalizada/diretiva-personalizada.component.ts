@@ -11,4 +11,10 @@ export class DiretivaPersonalizadaComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  mostrarCursos: boolean = false;
+  
+    Mostrar(){
+      this.mostrarCursos = !this.mostrarCursos;
+    }
 }

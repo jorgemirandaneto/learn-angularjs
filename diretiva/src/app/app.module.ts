@@ -1,3 +1,4 @@
+import { NgElseDirective } from './shared/ng-else.directive';
 import { HighlightDirective } from './shared/highlight.directive';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
@@ -29,7 +30,8 @@ import { DiretivaPersonalizadaComponent } from './diretiva-personalizada/diretiv
     DiretivaPersonalizadaComponent,
     FundoAmareloDirective,
     HighlightMouseDirective,
-    HighlightDirective
+    HighlightDirective,
+    NgElseDirective
   ],
   imports: [
     BrowserModule
