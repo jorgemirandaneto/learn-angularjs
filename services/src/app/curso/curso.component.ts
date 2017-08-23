@@ -8,19 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoComponent implements OnInit {
 
-  cursos: string[] = [];
+  cursos: string[];
 
-  cursoService : CursoService;
-  
+  cursoService: CursoService;
+
   constructor(private _cursoService: CursoService) {
-    
+
     this.cursoService = _cursoService;
     //this.cursoService = new CursoService();
     //this.cursos = this.cursoService.getCurso();
 
-   }
+  }
   ngOnInit() {
     this.cursos = this.cursoService.getCurso();
   }
 
+  onAddCurso(curso: string) {
+      this._cursoService.addCurso(curso);
+      console.log(curso);
+      alert(curso + " VIADO com sucesso.");
+  }
 }
