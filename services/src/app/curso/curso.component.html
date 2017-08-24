@@ -1,7 +1,7 @@
 <h5>Listagem de cursos.</h5>
 
 <input type="text" #curso>
-<button (click)="onAddCurso(curso.value)">Add Curso</button>
+<button *ngIf="curso"  (click)="onAddCurso(curso.value)">Add Curso</button>
 
 
 <ul>
