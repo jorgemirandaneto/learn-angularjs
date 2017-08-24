@@ -10,22 +10,25 @@ export class CursoComponent implements OnInit {
 
   cursos: string[];
 
-  cursoService: CursoService;
+  
 
   constructor(private _cursoService: CursoService) {
 
-    this.cursoService = _cursoService;
+    
     //this.cursoService = new CursoService();
     //this.cursos = this.cursoService.getCurso();
 
   }
   ngOnInit() {
-    this.cursos = this.cursoService.getCurso();
-  }
+    this.cursos = this._cursoService.getCurso();
+
+    CursoService.criouNovoCurso.subscribe(
+      curso => console.log(curso)
+    )
+  } 
 
   onAddCurso(curso: string) {
       this._cursoService.addCurso(curso);
       console.log(curso);
-      alert(curso + " VIADO com sucesso.");
   }
 }
