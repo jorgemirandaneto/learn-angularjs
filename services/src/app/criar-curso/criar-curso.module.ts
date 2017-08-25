@@ -1,3 +1,4 @@
+import { CursoService } from './../curso/curso.service';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +13,7 @@ import { ReceberCursoCriadoComponent } from '../receber-curso-criado/receber-cur
   imports: [
     CommonModule
   ],
-  exports: [CriarCursoComponent]//,
-  //providers: [CursosService]
+  exports: [CriarCursoComponent],
+  providers: [CursoService]
 })
 export class CriarCursoModule { }
