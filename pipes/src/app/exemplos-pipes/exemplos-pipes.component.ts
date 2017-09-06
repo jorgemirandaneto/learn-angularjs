@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExemplosPipesComponent implements OnInit {
 
   livro: any = {
-    titulo:'Livro 1',
+    titulo:'A tendência dos vestidos de noiva curtos. Veja como e quando usar.',
     rating:4.5658,
     numeroPagina:356,
     preco:54.56,
