@@ -1,22 +1,18 @@
-import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-
-import { MaterializeModule } from "angular2-materialize";
-
-
+import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MaterializeModule,
-    DiretivaNgifComponent,
-    
+    ListaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

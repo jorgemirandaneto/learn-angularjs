@@ -8,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class ExemplosPipesComponent implements OnInit {
 
   livro: any = {
-    titulo:'A tendência dos vestidos de noiva curtos. Veja como e quando usar.',
-    rating:4.5658,
-    numeroPagina:356,
-    preco:54.56,
-    dataLancamento: new Date(2016,5,23),
+    titulo: 'A tendência dos vestidos de noiva curtos. Veja como e quando usar.',
+    rating: 4.5658,
+    numeroPagina: 356,
+    preco: 54.56,
+    dataLancamento: new Date(2016, 5, 23),
     url: 'http:///a.com'
+  }
+
+  filtro: any;
+  livros: string[] = ['Angular 2', 'JAVA'];
+
+  addValor(valor) {
+    this.livros.push(valor);
   }
 
   constructor() { }

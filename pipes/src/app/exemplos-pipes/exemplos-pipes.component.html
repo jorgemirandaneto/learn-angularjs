@@ -8,8 +8,13 @@
 
 <p>Preço: {{livro.preco | currency:'brl':true}} </p>
 
-<p>Data de lançamento: {{livro.dataLancamento | date}} </p>
-
 <p>Url: {{livro.url}} </p>
 
 <p>Json : {{livro | json}} </p>
+
+<input type="text" name="teste" id="teste" [(ngModel)]="filtro">
+<ul>
+    <li *ngFor="let item of livros | filtrosArray:filtro">
+        {{item}}
+    </li>
+</ul>
